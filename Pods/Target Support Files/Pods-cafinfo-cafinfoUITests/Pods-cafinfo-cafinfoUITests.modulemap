@@ -1,0 +1,6 @@
+framework module Pods_cafinfo_cafinfoUITests {
+  umbrella header "Pods-cafinfo-cafinfoUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1F7FB1298B5CCECBB358C6AB /* Pods_cafinfo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF11AE9E5C2E850F282C53C8 /* Pods_cafinfo.framework */; };
+		310170ABE883057AA7867563 /* Pods_cafinfoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D12D4538D9710817E4817A7 /* Pods_cafinfoTests.framework */; };
+		C89FB21A8E82D657D9506D87 /* Pods_cafinfo_cafinfoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5DA52944361CCF61BEFF4A7 /* Pods_cafinfo_cafinfoUITests.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		DD86F8432DE486C70035BAAE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,9 +30,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0675C970A6A14EECEEE32280 /* Pods-cafinfo-cafinfoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cafinfo-cafinfoUITests.debug.xcconfig"; path = "Target Support Files/Pods-cafinfo-cafinfoUITests/Pods-cafinfo-cafinfoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		208F73870FBB82EE49273010 /* Pods-cafinfo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cafinfo.debug.xcconfig"; path = "Target Support Files/Pods-cafinfo/Pods-cafinfo.debug.xcconfig"; sourceTree = "<group>"; };
+		5D12D4538D9710817E4817A7 /* Pods_cafinfoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cafinfoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A8D1EB6B5B94FC36A9B3842 /* Pods-cafinfoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cafinfoTests.debug.xcconfig"; path = "Target Support Files/Pods-cafinfoTests/Pods-cafinfoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8236D501B60E4F88F5733661 /* Pods-cafinfo-cafinfoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cafinfo-cafinfoUITests.release.xcconfig"; path = "Target Support Files/Pods-cafinfo-cafinfoUITests/Pods-cafinfo-cafinfoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9DDF5B9F68992A0B443069C7 /* Pods-cafinfo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cafinfo.release.xcconfig"; path = "Target Support Files/Pods-cafinfo/Pods-cafinfo.release.xcconfig"; sourceTree = "<group>"; };
+		A5DA52944361CCF61BEFF4A7 /* Pods_cafinfo_cafinfoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cafinfo_cafinfoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD86F82C2DE486C50035BAAE /* cafinfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cafinfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD86F8422DE486C70035BAAE /* cafinfoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cafinfoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD86F84C2DE486C70035BAAE /* cafinfoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cafinfoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDBDDBEE0FE9624D33E88DCD /* Pods-cafinfoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cafinfoTests.release.xcconfig"; path = "Target Support Files/Pods-cafinfoTests/Pods-cafinfoTests.release.xcconfig"; sourceTree = "<group>"; };
+		EF11AE9E5C2E850F282C53C8 /* Pods_cafinfo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cafinfo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -50,11 +65,15 @@
 		};
 		DD86F8452DE486C70035BAAE /* cafinfoTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = cafinfoTests;
 			sourceTree = "<group>";
 		};
 		DD86F84F2DE486C70035BAAE /* cafinfoUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = cafinfoUITests;
 			sourceTree = "<group>";
 		};
@@ -65,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F7FB1298B5CCECBB358C6AB /* Pods_cafinfo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				310170ABE883057AA7867563 /* Pods_cafinfoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,12 +100,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C89FB21A8E82D657D9506D87 /* Pods_cafinfo_cafinfoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		772F2024198BEBD67AC601DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF11AE9E5C2E850F282C53C8 /* Pods_cafinfo.framework */,
+				A5DA52944361CCF61BEFF4A7 /* Pods_cafinfo_cafinfoUITests.framework */,
+				5D12D4538D9710817E4817A7 /* Pods_cafinfoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D86196B9AB043B79DFC94B23 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				208F73870FBB82EE49273010 /* Pods-cafinfo.debug.xcconfig */,
+				9DDF5B9F68992A0B443069C7 /* Pods-cafinfo.release.xcconfig */,
+				0675C970A6A14EECEEE32280 /* Pods-cafinfo-cafinfoUITests.debug.xcconfig */,
+				8236D501B60E4F88F5733661 /* Pods-cafinfo-cafinfoUITests.release.xcconfig */,
+				6A8D1EB6B5B94FC36A9B3842 /* Pods-cafinfoTests.debug.xcconfig */,
+				DDBDDBEE0FE9624D33E88DCD /* Pods-cafinfoTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DD86F8232DE486C50035BAAE = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +138,8 @@
 				DD86F8452DE486C70035BAAE /* cafinfoTests */,
 				DD86F84F2DE486C70035BAAE /* cafinfoUITests */,
 				DD86F82D2DE486C50035BAAE /* Products */,
+				D86196B9AB043B79DFC94B23 /* Pods */,
+				772F2024198BEBD67AC601DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,9 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD86F8552DE486C70035BAAE /* Build configuration list for PBXNativeTarget "cafinfo" */;
 			buildPhases = (
+				B0D297E6BC89B06FA81E4B44 /* [CP] Check Pods Manifest.lock */,
 				DD86F8282DE486C50035BAAE /* Sources */,
 				DD86F8292DE486C50035BAAE /* Frameworks */,
 				DD86F82A2DE486C50035BAAE /* Resources */,
+				2FB865C93BB5DE615FE0EE3B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,8 +174,6 @@
 				DD86F82E2DE486C50035BAAE /* cafinfo */,
 			);
 			name = cafinfo;
-			packageProductDependencies = (
-			);
 			productName = cafinfo;
 			productReference = DD86F82C2DE486C50035BAAE /* cafinfo.app */;
 			productType = "com.apple.product-type.application";
@@ -134,6 +182,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD86F85A2DE486C70035BAAE /* Build configuration list for PBXNativeTarget "cafinfoTests" */;
 			buildPhases = (
+				50AC04D2927DE67953CA45A7 /* [CP] Check Pods Manifest.lock */,
 				DD86F83E2DE486C70035BAAE /* Sources */,
 				DD86F83F2DE486C70035BAAE /* Frameworks */,
 				DD86F8402DE486C70035BAAE /* Resources */,
@@ -147,8 +196,6 @@
 				DD86F8452DE486C70035BAAE /* cafinfoTests */,
 			);
 			name = cafinfoTests;
-			packageProductDependencies = (
-			);
 			productName = cafinfoTests;
 			productReference = DD86F8422DE486C70035BAAE /* cafinfoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -157,9 +204,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD86F85D2DE486C70035BAAE /* Build configuration list for PBXNativeTarget "cafinfoUITests" */;
 			buildPhases = (
+				8D9E6A3F988607635E93B208 /* [CP] Check Pods Manifest.lock */,
 				DD86F8482DE486C70035BAAE /* Sources */,
 				DD86F8492DE486C70035BAAE /* Frameworks */,
 				DD86F84A2DE486C70035BAAE /* Resources */,
+				834BFD5AFDC4B93A80962792 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,8 +219,6 @@
 				DD86F84F2DE486C70035BAAE /* cafinfoUITests */,
 			);
 			name = cafinfoUITests;
-			packageProductDependencies = (
-			);
 			productName = cafinfoUITests;
 			productReference = DD86F84C2DE486C70035BAAE /* cafinfoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -244,6 +291,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2FB865C93BB5DE615FE0EE3B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cafinfo/Pods-cafinfo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cafinfo/Pods-cafinfo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-cafinfo/Pods-cafinfo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50AC04D2927DE67953CA45A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cafinfoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		834BFD5AFDC4B93A80962792 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cafinfo-cafinfoUITests/Pods-cafinfo-cafinfoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cafinfo-cafinfoUITests/Pods-cafinfo-cafinfoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-cafinfo-cafinfoUITests/Pods-cafinfo-cafinfoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D9E6A3F988607635E93B208 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cafinfo-cafinfoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0D297E6BC89B06FA81E4B44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cafinfo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DD86F8282DE486C50035BAAE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -284,6 +434,7 @@
 /* Begin XCBuildConfiguration section */
 		DD86F8562DE486C70035BAAE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 208F73870FBB82EE49273010 /* Pods-cafinfo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -293,7 +444,6 @@
 				INFOPLIST_FILE = cafinfo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -311,6 +461,7 @@
 		};
 		DD86F8572DE486C70035BAAE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DDF5B9F68992A0B443069C7 /* Pods-cafinfo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,7 +471,6 @@
 				INFOPLIST_FILE = cafinfo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -373,7 +523,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -436,7 +586,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -457,6 +607,7 @@
 		};
 		DD86F85B2DE486C70035BAAE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A8D1EB6B5B94FC36A9B3842 /* Pods-cafinfoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -475,6 +626,7 @@
 		};
 		DD86F85C2DE486C70035BAAE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDBDDBEE0FE9624D33E88DCD /* Pods-cafinfoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -493,6 +645,7 @@
 		};
 		DD86F85E2DE486C70035BAAE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0675C970A6A14EECEEE32280 /* Pods-cafinfo-cafinfoUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -509,6 +662,7 @@
 		};
 		DD86F85F2DE486C70035BAAE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8236D501B60E4F88F5733661 /* Pods-cafinfo-cafinfoUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
