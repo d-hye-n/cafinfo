@@ -65,15 +65,11 @@
 		};
 		DD86F8452DE486C70035BAAE /* cafinfoTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = cafinfoTests;
 			sourceTree = "<group>";
 		};
 		DD86F84F2DE486C70035BAAE /* cafinfoUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = cafinfoUITests;
 			sourceTree = "<group>";
 		};
@@ -127,7 +123,6 @@
 				6A8D1EB6B5B94FC36A9B3842 /* Pods-cafinfoTests.debug.xcconfig */,
 				DDBDDBEE0FE9624D33E88DCD /* Pods-cafinfoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -300,9 +295,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-cafinfo/Pods-cafinfo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-cafinfo/Pods-cafinfo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -339,9 +338,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-cafinfo-cafinfoUITests/Pods-cafinfo-cafinfoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-cafinfo-cafinfoUITests/Pods-cafinfo-cafinfoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
