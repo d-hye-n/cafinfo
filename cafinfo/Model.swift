@@ -22,7 +22,7 @@ extension infoTableModel {
     static func weekdayTable() -> [infoTableModel] {
         return [
             infoTableModel(period: "시간", startTime: "시작시간", endTime: "마감시간"),
-            infoTableModel(period: "아침", startTime: "08:00", endTime: "09:30"),
+            infoTableModel(period: "아침", startTime: "8:00", endTime: "9:30"),
             infoTableModel(period: "점심", startTime: "11:30", endTime: "13:30"),
             infoTableModel(period: "저녁", startTime: "17:30", endTime: "18:30")
         ]

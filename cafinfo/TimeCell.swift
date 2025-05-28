@@ -13,7 +13,7 @@ final class TimeCell: UICollectionViewCell {
     
     private let valueLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 16, weight: .regular)
+        label.font = UIFont.systemFont(ofSize: 18, weight: .regular)
         label.textColor = .black
         label.textAlignment = .center
         return label
