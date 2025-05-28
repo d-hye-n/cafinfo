@@ -103,8 +103,7 @@ extension ViewController: UICollectionViewDataSource {
             switch col {
             case 0: return model.period
             case 1: return model.startTime
-            case 2: return model.endTime
-            default: return ""
+            default: return model.endTime
             }
         }()
         

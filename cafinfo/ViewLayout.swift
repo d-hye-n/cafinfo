@@ -58,7 +58,7 @@ extension ViewController {
         
         updateDate.snp.makeConstraints {
             $0.leading.equalToSuperview().offset(20)
-            $0.bottom.equalTo(view.safeAreaLayoutGuide).inset(170)
+            $0.bottom.equalTo(view.safeAreaLayoutGuide).inset(215)
         }
     }
 }
@@ -74,7 +74,7 @@ func makeTableLayout(cellHeight: CGFloat, horizontalInset: CGFloat) -> UICollect
     let section = NSCollectionLayoutSection(group: group)
     section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: horizontalInset, bottom: 0, trailing: horizontalInset)
     
-    let headerSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .absolute(44))
+    let headerSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .absolute(45))
     let sectionHeader = NSCollectionLayoutBoundarySupplementaryItem(
         layoutSize: headerSize,
         elementKind: UICollectionView.elementKindSectionHeader,
@@ -96,7 +96,7 @@ final class SectionHeaderView: UICollectionReusableView {
     static let reuseID = "SectionHeaderView"
     private let titleLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.boldSystemFont(ofSize: 24)
+        label.font = UIFont.boldSystemFont(ofSize: 20)
         label.textColor = .bluue
         return label
     }()
