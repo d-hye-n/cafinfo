@@ -9,31 +9,69 @@ import UIKit
 import SnapKit
 
 final class TimeCell: UICollectionViewCell {
-    static let reuseID = "InfoTableCell"
-    private let stack = UIStackView()
+    static let reuseID = "TimeCell"
+    
+    private let valueLabel: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 16, weight: .regular)
+        label.textColor = .black
+        label.textAlignment = .center
+        return label
+    }()
+    
+    private let bottomBorder: UIView = {
+        let view = UIView()
+        view.backgroundColor = .lightGray
+        return view
+    }()
+    
+    private let topBorder: UIView = {
+        let view = UIView()
+        view.backgroundColor = .lightGray
+        view.isHidden = true
+        return view
+    }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        stack.axis = .horizontal
-        stack.distribution = .fillEqually
-        contentView.addSubview(stack)
-        stack.snp.makeConstraints { $0.edges.equalToSuperview() }
+        contentView.addSubview(valueLabel)
+        valueLabel.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.centerY.equalToSuperview()
+        }
+        contentView.addSubview(bottomBorder)
+        bottomBorder.snp.makeConstraints {
+            $0.leading.trailing.bottom.equalToSuperview()
+            $0.height.equalTo(1)
+        }
+        contentView.addSubview(topBorder)
+        topBorder.snp.makeConstraints {
+            $0.leading.trailing.top.equalToSuperview()
+            $0.height.equalTo(1)
+        }
+        backgroundColor = .white
+        contentView.backgroundColor = .white
     }
     required init?(coder: NSCoder) {
-        fatalError()
+        fatalError("init(coder:) has not been implemented")
     }
     
-    func configure(columns: [String], isHeader: Bool) {
-        stack.arrangedSubviews.forEach {
-            $0.removeFromSuperview()
+    func configure(with value: String,
+                   isHeaderRow: Bool,
+                   showTopBorder: Bool,
+                   bottomBorderThick: CGFloat = 1,
+                   bottomColor: UIColor = .lightGray) {
+        valueLabel.text = value
+        let backgroundColor = isHeaderRow
+        ? UIColor(white: 0.95, alpha: 1.0)
+        : .white
+        contentView.backgroundColor = backgroundColor
+        topBorder.isHidden = !showTopBorder
+        bottomBorder.snp.updateConstraints {
+            $0.height.equalTo(bottomBorderThick)
         }
-        columns.forEach { title in
-            let lbl = UILabel()
-            lbl.text = title
-            lbl.textAlignment = .center
-            lbl.font = .systemFont(ofSize: 14, weight: isHeader ? .semibold : .regular)
-            stack.addArrangedSubview(lbl)
-        }
+        bottomBorder.backgroundColor = bottomColor
     }
+    
 }
 
